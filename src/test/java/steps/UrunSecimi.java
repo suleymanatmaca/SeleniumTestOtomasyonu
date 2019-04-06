@@ -49,7 +49,8 @@ public class UrunSecimi {
     public void sayfaya_Tıklar() {
         theActorInTheSpotlight().attemptsTo(
                 WaitUntil.the(HomePage.SELECTED_PAGE_BUTTON, isVisible()),
-                Click.on(HomePage.SECOND_PAGE_BUTTON)
+                Click.on(HomePage.SECOND_PAGE_BUTTON),
+                WaitUntil.the(HomePage.SECOND_PAGE_BUTTON, isVisible())
         );
     }
 
